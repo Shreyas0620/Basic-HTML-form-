@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: rgb(226, 245, 248);
+                        
+        }
+textarea{
+    resize: none;
+}
+#submit{
+    background-color: black;
+    color: white;
+}
+    
+
+    </style>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <h4>Fill out the Form For registration</h4>
+    <hr><br>
+    <form action="/action_page.php" method="post" >
+        <!-- name part -->
+        <label for="name">Name</label><br>
+<input type="text" name="name" id="name" placeholder="First" >
+<input type="text" name="name" id="name" placeholder="Last" >
+<!-- name part ends  -->
+<br><br>
+
+    <label for="DOB">Birth Date</label><br>
+    <input type="date" name="DOB" id="DOB">
+    
+    <label for="Gender">Gender</label>
+    <input type="radio" id="Gender"> male
+    <input type="radio" id="Gender"> Female <br><br>
+
+    <label for="address">Address</label><br>
+<textarea id="address" name="address" rows="4" cols="50">
+</textarea><br><br>
+ 
+<label for="email">Enter your email:</label>
+<input type="email" id="email" name="email">
+<br><br>
+
+
+<label for="phone">Enter your phone number:</label>
+<input type="tel" id="phone" name="phone"><br><br>
+ 
+<label for="Courses">Choose Courses:</label>
+
+<select name="Courses" id="Courses">
+  <option value="Full Stack">Full Stack</option>
+  <option value="UI/UX">UI/UX</option>
+  <option value="Data Science">Data Science</option>
+</select>
+<br><br>
+
+<label for="Comment">Add a Comment</label>
+<input type="text">
+<br><br>
+
+<input type="reset" value="clear fields">
+<input type="submit" id="submit" value="submit application">
+
+    </form>
+</body>
+</html>
